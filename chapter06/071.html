@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ページのタイトル</title>
+  <script>
+    function OPT(){
+    frm_1.result.value = frm_1.inp_1.value + frm_1.inp_2.value;
+    }
+  </script>
+</head>
+<body>
+
+  <form action="foo.php" method="POST" onInput="OPT()" id="frm_1">
+    <p>
+      <label>
+	誰が？
+	<input type="text" name="inp_1">
+      </label>
+    </p>
+    <p>
+      <label>
+	どうした？
+	<input type="text" name="inp_2">
+      </label>
+    </p>
+    <p>
+      <label>
+	合成結果：
+	<output name="result">
+	</output>
+      </label>
+    </p>
+  </form>
+
+</body>
+</html>

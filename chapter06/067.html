@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ページのタイトル</title>
+</head>
+<body>
+
+  <form action="foo.php" method="POST">
+    <datalist id="henkan">
+      <option value="あか" label="あか">
+      <option value="あかるい" label="あかるい">
+      <option value="あき" label="あき">
+
+	<p>
+	  <label>
+	    「あ」と入力してください：
+	    <input type="text" list="henkan">
+	  </label>
+	</p>
+
+	<p>
+	  <input type="submit" value="送信">
+	</p>
+  </form>
+
+</body>
+</html>

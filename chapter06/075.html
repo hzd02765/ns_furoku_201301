@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ページのタイトル</title>
+  <script>
+    function OI(){
+    FRM_A.OP.value = FRM_A.RNG.value;
+    }
+  </script>
+</head>
+<body>
+
+  <form action="foo.php" method="POST" id="FRM_A">
+    <input type="range" min="0" max="0" step="5" onInput="OI()" name="PNG">
+    <output name="OP"></output>
+  </form>
+
+</body>
+</html>
