@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ページのタイトル</title>
+</head>
+<body>
+
+  <form action="foo.php" method="GET" id="FRM_A">
+    <input type="submit" value="送信">
+  </form>
+
+  <p>
+    何かのコンテンツをこのように挟んで、下にテキストボックスを配置します。
+    <br>
+    このテキストボックスはform="FRM_A"という属性指定があるので、FRM_Aの送信ボタンを押すと、その内容がサーバーに送信されます。
+  </p>
+
+  <input type="text" name="TXT_A" form="FRM_A">
+
+</body>
+</html>
