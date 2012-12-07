@@ -3,8 +3,49 @@
 <head>
   <meta charset="utf-8">
   <title>ページのタイトル</title>
+  <style>
+  	div#div_1{
+  		box-orient:horizontal;
+
+  		display:-moz-box;
+  		display:-webkit-box;
+
+  		-moz-box-orient:horizontal;
+  		-webkit-box-orient:horizontal;
+  	}
+
+  	p#p_1{
+  		background:#ff0000;
+  		box-ordinal-group:2;
+
+  		-moz-box-ordinal-group:2;
+  		-webkit-box-ordinal-group:2;
+  	}
+
+  	p#p_2{
+  		background:#cccccc;
+  		box-ordinal-group:3;
+
+  		-moz-box-ordinal-group:3;
+  		-webkit-box-ordinal-group:3;
+  	}
+
+  	p#p_3{
+  		background:#888888;
+  		box-ordinal-group:1;
+
+  		-moz-box-ordinal-group:1;
+  		-webkit-box-ordinal-group:1;
+  	}
+  </style>
 </head>
 <body>
+
+	<div id="div_1">
+		<p id="p_1">ブロック１</p>
+		<p id="p_2">ブロック２</p>
+		<p id="p_3">ブロック３</p>
+	</div>
 
 </body>
 </html>
