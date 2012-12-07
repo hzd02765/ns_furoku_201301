@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ページのタイトル</title>
+  <style>
+    div#div_1{
+    background:#000000;
+    width:500px;
+    height:300px;
+
+    box-orient:horizontal;
+
+    display:-moz-box;
+
+    -moz-box-orient:horizontal;
+    -moz-box-align:center;
+    }
+
+    p#p_1{
+    background:#ff0000;
+
+    -moz-box-flex:2;
+    }
+
+    p#p_2{
+    background:#cccccc;
+
+    -moz-box-flex:1;
+    }
+
+    p#p_3{
+    background:#888888;
+
+    box-flex:3;
+    
+    -moz-box-flex:3;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="div_1">
+     <p id="p_1">ブロック１</p>
+     <p id="p_2">ブロック２</p>
+     <p id="p_3">ブロック３</p>
+  </div>
+
+</body>
+</html>
