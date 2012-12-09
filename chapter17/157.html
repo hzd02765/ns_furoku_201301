@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ページのタイトル</title>
+  <style>
+    div#div_1{
+    background:#cccccc;
+    width:300px;
+    height:100px;
+    transition:background-color 2s liner 0, width 1s linear 0, height 1s linear 0, color 2s linaer 0;
+    -webkit-transition: background-color 2s linear 0, width 1s linear 0, height 1s linear 0, color 2s linear 0;
+    }
+
+    div#div_1:hover{
+    background:#000000;
+    color:#ffffff;
+    width:500px;
+    height:150px;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div id="div_1">
+    <p>
+      カーソルを持ってくるとこの部分が経時変化します。
+    </p>
+  </div>
+
+</body>
+</html>
