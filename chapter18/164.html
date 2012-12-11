@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ページのタイトル</title>
+  <style>
+    div#div_1{
+    background:#cccccc;
+    width:300px;
+    height:100px;
+
+    animation-name: ANM1;
+    animation-duration: 3s;
+    
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -weblit-animation-name: ANM1;
+    -weblit-animation-duration: 3s;
+    -weblit-animation-timing-function: linear;
+    -weblit-animation-iteration-count: infinite;
+    }
+
+    @keyframe ANM1{
+    0% {width:150px; height:100px; background:#888888; color:#000000;}
+    100% {width:200px; height:150px; background:#000000; color:#fffffff;}
+    }
+
+    @-webkit-keyframe ANM1{
+    0% {width:150px; height:100px; background:#888888; color:#000000;}
+    100% {width:200px; height:150px; background:#000000; color:#fffffff;}
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <p>
+      この部分が自動でアニメーションします。
+    </p>
+  </div>
+
+</body>
+</html>
