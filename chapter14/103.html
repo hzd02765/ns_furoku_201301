@@ -5,10 +5,17 @@
   <title>ページのタイトル</title>
   <style>
     div#p_1{
-    width: 600px;
-    column-width: 290px;
-    -moz-column-width: 290px
-    -webkit-column-width: 290px;
+		/*全体を600px幅にして*/
+		width: 600px;
+		/*1段を290pxにすると*/
+		column-width: 290px;
+		/*全体を２つに分けた段組の生成が期待できます。*/
+		
+		/*ベンダープリフィクス*/
+		/*Firefox系*/
+		-moz-column-width: 290px
+		/*WebKit系*/
+		-webkit-column-width: 290px;
     }
   </style>
 </head>

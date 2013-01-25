@@ -6,29 +6,33 @@
   <style>
     <style>
       div#div_1{
-      background:#cccccc;
-      width:300px;
-      height:100px;
+		  background:#cccccc;
+		  width:300px;
+		  height:100px;
 
-      animation-name: ANM1;
-      animation-duration: 3s;
-      animation-timing-function:linear;
-      animation-iteration-count: infinite;
+			/*アニメーションの指定*/
+			/*キーフレーム名を指定*/
+		  animation-name: ANM1;
+		  animation-duration: 3s;
+		  animation-timing-function:linear;
+		  animation-iteration-count: infinite;
 
-      -moz-animation-name: ANM1;
-      -moz-animation-duration: 3s;
-      -moz-animation-timing-function:linear;
-      -moz-animation-iteration-count: infinite;
+		  /*ベンダープリフィクス*/
+		  -moz-animation-name: ANM1;
+		  -moz-animation-duration: 3s;
+		  -moz-animation-timing-function:linear;
+		  -moz-animation-iteration-count: infinite;
       }
 
       @keyframes ANM1{
-      0% {width:150px; height:100px; background:#888888; color:#000000};
-      100% {width:200px; height:150px; background:#000000; color:#ffffff};
+		  0% {width:150px; height:100px; background:#888888; color:#000000};
+		  100% {width:200px; height:150px; background:#000000; color:#ffffff};
       }
 
+	  /*キーフレーム定義もベンダープリフィクスが必要*/
       @-moz-keyframes ANM1{
-      0% {width:150px; height:100px; background:#888888; color:#000000};
-      100% {width:200px; height:150px; background:#000000; color:#ffffff};
+		  0% {width:150px; height:100px; background:#888888; color:#000000};
+		  100% {width:200px; height:150px; background:#000000; color:#ffffff};
       }
     </style>
   </style>

@@ -5,10 +5,15 @@
   <title>ページのタイトル</title>
   <style>
     div#p_1{
-    width: 600px;
-    column-count:3;
-    -moz-column-count:3;
-    -webkit-column-count:3;
+		/*全体を600pxにして*/
+		width: 600px;
+		/*3段を指定すると*/
+		column-count:3;
+		/*1段を約200pxに分けた段組の生成が期待できます*/
+		
+		/*ベンダープリフィクス*/
+		-moz-column-count:3;
+		-webkit-column-count:3;
     }
   </style>
 </head>

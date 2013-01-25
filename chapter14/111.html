@@ -5,19 +5,27 @@
   <title>ページのタイトル</title>
   <style>
     div#p_1{
-    width: 600px;
-    column-width: 250px;
-    column-rule-width:1px;
-    column-rule-style:solid;
+		/*全体を600px幅にして*/
+		width: 600px;
+		/*1段を250pxにすると*/
+		column-width: 250px;
+		/*全体を2つに分けた段組の生成が期待できます*/
+		/*区切り線の太さとスタイルを設定*/
+		column-rule-width:1px;
+		column-rule-style:solid;
 
-    -moz-column-width: 250px;
-    -webkit-column-width: 250px;
-    
-    -moz-column-rule-width:1px;
-    -moz-column-rule-style:solid;
+		/*ベンダープリフィクス*/
+		/*Firefox系*/
+		-moz-column-width: 250px;
+		/*WebKit系*/
+		-webkit-column-width: 250px;
+		
+		/*カラム間の区切り線を1pxの実線にします*/
+		-moz-column-rule-width:1px;
+		-moz-column-rule-style:solid;
 
-    -webkit-column-rule-width:1px;
-    -webkit-column-rule-style:solid;
+		-webkit-column-rule-width:1px;
+		-webkit-column-rule-style:solid;
     }
   </style>
 </head>

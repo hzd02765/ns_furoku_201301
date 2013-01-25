@@ -5,18 +5,22 @@
   <title>ページのタイトル</title>
   <style>
     div#div_1{
-    background:#cccccc;
-    width:300px;
-    height:100px;
-    transition:background-color 2s liner 0, width 1s linear 0, height 1s linear 0, color 2s linaer 0;
-    -webkit-transition: background-color 2s linear 0, width 1s linear 0, height 1s linear 0, color 2s linear 0;
+		background:#cccccc;
+		width:300px;
+		height:100px;
+		/*経時変化の指定*/
+		transition:background-color 2s liner 0, width 1s linear 0, height 1s linear 0, color 2s linaer 0;
+		/*ベンダープリフィクス*/
+		-webkit-transition: background-color 2s linear 0, width 1s linear 0, height 1s linear 0, color 2s linear 0;
     }
 
+	/*マウスオーバーしたときのCSS*/
     div#div_1:hover{
-    background:#000000;
-    color:#ffffff;
-    width:500px;
-    height:150px;
+		background:#000000;
+		color:#ffffff;
+		width:500px;
+		height:150px;
+		/*こちらにはtransitionは必要ありません*/
     }
   </style>
 </head>

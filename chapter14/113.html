@@ -5,21 +5,26 @@
   <title>ページのタイトル</title>
   <style>
     div#p_1{
-    width: 600px;
-    column-width: 250px;
-    
-    column-rule-width:3px;
+		/*全体を600px幅にして*/
+		width: 600px;
+		/*1段を250pxにすると*/
+		column-width: 250px;
+		/*全体を2つに分けた段組の生成が期待できます*/
+		column-rule-width:3px;
+		/*境界線を点線にします*/
+		column-rule-style:dotted;
 
-    column-rule-style:dotted;
+		/*ベンダープリフィクス*/
+		/*Firefox系*/
+		-moz-column-width: 250px
+		/*WebKit系*/
+		-webkit-column-width: 250px;
 
-    -moz-column-width: 250px
-    -webkit-column-width: 250px;
+		-moz-column-rule-width:3px;
+		-moz-column-rule-style:dotted;
 
-    -moz-column-rule-width:3px;
-    -moz-column-rule-style:dotted;
-
-    -webkit-column-rule-width:3px;
-    -webkit-column-rule-style:dotted;
+		-webkit-column-rule-width:3px;
+		-webkit-column-rule-style:dotted;
     }
   </style>
 </head>

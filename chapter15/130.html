@@ -5,36 +5,41 @@
   <title>ページのタイトル</title>
   <style>
     div#div_1{
-    background:#000000;
-    width:500px;
-    height:300px;
+		/*背景とコンテナボックスのサイズ*/
+		background:#000000;
+		width:500px;
+		height:300px;
+		/*子要素を水平配置します*/
+		box-orient:horizontal;
 
-    box-orient:horizontal;
+		display:-moz-box;
 
-    display:-moz-box;
-
-    -moz-box-orient:horizontal;
-    -moz-box-align:center;
+		/*ベンダープリフィクス*/
+		-moz-box-orient:horizontal;
+		-moz-box-align:center;
     }
 
     p#p_1{
-    background:#ff0000;
-
-    -moz-box-flex:2;
+		/*伸縮比率２*/
+		background:#ff0000;
+		/*ベンダープリフィクス*/
+		-moz-box-flex:2;
     }
 
     p#p_2{
-    background:#cccccc;
-
-    -moz-box-flex:1;
+		background:#cccccc;
+		/*伸縮比率１*/
+		box-flex:1;
+		/*ベンダープリフィクス*/
+		-moz-box-flex:1;
     }
 
     p#p_3{
-    background:#888888;
-
-    box-flex:3;
-    
-    -moz-box-flex:3;
+		background:#888888;
+		/*伸縮比率３*/
+		box-flex:3;
+		/*ベンダープリフィクス*/
+		-moz-box-flex:3;
     }
   </style>
 </head>

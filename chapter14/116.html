@@ -5,19 +5,27 @@
   <title>ページのタイトル</title>
   <style>
     div#p_1{
-    width: 600px;
-    column-width: 250px;
+		/*全体を600px幅にして*/
+		width: 600px;
+		/*1段を250pxにすると*/
+		column-width: 250px;
+		/*全体を2つに分けた段組の生成が期待できます*/
 
-    -moz-column-width: 250px;
-    -webkit-column-width: 250px;
+		/*ベンダープリフィクス*/
+		/*Firefox系*/
+		-moz-column-width: 250px;
+		/*WebKit系*/
+		-webkit-column-width: 250px;
     }
 
     h1#h_1{
-    background:#888888;
-    
-    column-span:all;
+		background:#888888;
+		/*カラム全体をまたぎます*/
+		column-span:all;
 
-    -webkit-column-span:all;
+		/*ベンダープリフィクス*/
+		/*WebKit系*/
+		-webkit-column-span:all;
     }
   </style>
 </head>

@@ -5,25 +5,27 @@
   <title>ページのタイトル</title>
   <style>
     div#div_1{
-    background:#cccccc;
-    width:300px;
-    height:100px;
+		background:#cccccc;
+		width:300px;
+		height:100px;
+		/*経時変化の指定*/
+		transition-property:background, color;
+		transition-duration:3s;
+		transition-timing-function:liner;
+		/*変化開始を1秒後に指定*/
+		transition-delay:1s;
 
-    transition-property:background, color;
-    transition-duration:3s;
-    transition-timing-function:liner;
-
-    transition-delay:1s;
-
-    -webkit-transtion-property:background, color;
-    -webkit-transtion-duration:3s;
-    -webkit-transtion-timing-function:liner;
-    -webkit-transtion-delay:1s;
+		/*ベンダープリフィクス*/
+		-webkit-transtion-property:background, color;
+		-webkit-transtion-duration:3s;
+		-webkit-transtion-timing-function:liner;
+		-webkit-transtion-delay:1s;
     }
 
     div#div_1:hover{
-    background:#000000;
-    color:#ffffff;
+		background:#000000;
+		color:#ffffff;
+		/*変化後のこちらにはtransitionは必要ありません*/
     }
   </style>
 </head>

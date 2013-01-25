@@ -5,31 +5,34 @@
   <title>ページのタイトル</title>
   <style>
     div#div_1{
-    background:#ccccccc;
-    width:300px;
-    height:100px;
+		background:#ccccccc;
+		width:300px;
+		height:100px;
+		/*アニメーションの指定*/
+		animation-name: ANM1;
+		animation-duration: 3s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		/*順方向→逆方向→･･･を繰り返します*/
+		animation-direction:alternate;
 
-    animation-name: ANM1;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction:alternate;
-
-    -webkit-animation-name: ANM1;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction:alternate;    
+		/*ベンダープリフィクス*/
+		-webkit-animation-name: ANM1;
+		-webkit-animation-duration: 3s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction:alternate;    
     }
 
     @keyframes ANM1{
-    0% {width:150px; height:100px; background:#888888; color:#000000;}
-    100% {width:200px; height:150px; background:#000000; color:#ffffff;}
+		0% {width:150px; height:100px; background:#888888; color:#000000;}
+		100% {width:200px; height:150px; background:#000000; color:#ffffff;}
     }
 
+	/*キーフレーム定義もベンダープリフィクスが必要*/
     @-webkit-keyframes ANM1{
-    0% {width:150px; height:100px; background:#888888; color:#000000;}
-    100% {width:200px; height:150px; background:#000000; color:#ffffff;}
+		0% {width:150px; height:100px; background:#888888; color:#000000;}
+		100% {width:200px; height:150px; background:#000000; color:#ffffff;}
     }
   </style>
 </head>

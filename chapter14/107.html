@@ -5,8 +5,14 @@
   <title>ページのタイトル</title>
   <style>
     div#p_1{
-    width:600px;
-    columns:180px auto;
+		/*全体を600px幅にして*/
+		width:600px;
+		/*180pxで段数は自動計算*/
+		columns:180px auto;
+		/*1段を約180pxに分けた3段組の生成が期待できます*/
+		
+		/*ベンダープリフィクス対応はないので*/
+		/*column-widthとcolumn-countで設定してください*/
     }
   </style>
 </head>
